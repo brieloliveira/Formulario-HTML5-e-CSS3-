@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #253A5E;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 80px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #DA9C9B;
+    text-shadow: 1px 1px 1px #ddd;
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+}
+
+legend {
+    font-size: 15px;
+    color: #253A5E;
+    background-color: #DA9C9B;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #4B6B8F;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.grupo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.campo {
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+input[type=text], [type=email], [type=tel], [type=date], select, [type=password] {
+    width: 300px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #DA9C9B;
+    margin-top: 5px;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #ddd;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+}
+
+label a {
+    text-decoration: none;
+    color: white;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px;
+    background-color: #da9c9b;
+    border-radius: 5px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #4B6B8F;
+    color: #da9c9b;
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    legend {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    input[type=text], [type=email], [type=tel], [type=date], select, [type=password] {
+        width: 250px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 280px) {
+    .campo {
+        margin-left: 15px;
+    }
+    button {
+        margin-left: 30px;
+    }
+}
